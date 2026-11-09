@@ -62,7 +62,7 @@ function onSubmit(): void {
     <div class="field">
       <label for="category">Categorie</label>
       <select id="category" v-model="form.category">
-        <option v-for="c in categories" :key="c" :value="c">{{ c }}</option>
+        <option v-for="category in categories" :key="category" :value="category">{{ category }}</option>
       </select>
       <span v-if="errors.category" class="error">{{ errors.category }}</span>
     </div>
